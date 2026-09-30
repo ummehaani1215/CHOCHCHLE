@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Anniversary</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="small-heading">
+            ONE YEAR ♡
+        </div>
+
+        <h1>
+            Happy 1st Wedding Anniversary
+        </h1>
+
+        <h2 id="coupleNames"></h2>
+
+        <p>
+            Congratulations on your first year together.
+        </p>
+
+        <p>
+            Here's to all the memories you've made,
+            and all the beautiful ones still to come.
+        </p>
+
+        <p class="ending">
+            With love, always ♡
+        </p>
+
+    </div>
+
+    <script>
+
+        const name1 = localStorage.getItem("name1");
+        const name2 = localStorage.getItem("name2");
+
+        document.getElementById("coupleNames").innerText =
+            name1 + " & " + name2;
+
+    </script>
+
+</body>
+
+</html>

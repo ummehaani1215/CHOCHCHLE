@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    background: #f8f4f1;
+
+    color: #3d3633;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+
+    padding: 60px 45px;
+
+    text-align: center;
+
+    background: #fffdfb;
+
+    border: 1px solid #e8ddd6;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 35px rgba(70, 50, 40, 0.08);
+
+    animation: appear 1s ease;
+}
+
+.small-heading {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #a17d70;
+
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+
+    font-weight: normal;
+
+    color: #4b3b36;
+
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 17px;
+
+    color: #8a7770;
+
+    margin-bottom: 32px;
+}
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+
+    padding: 14px 12px;
+
+    border: 1px solid #ded3cd;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #a17d70;
+
+    box-shadow: 0 0 0 3px rgba(161, 125, 112, 0.08);
+}
+
+button {
+    padding: 13px 32px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #8f6f63;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #76584e;
+
+    transform: translateY(-2px);
+}
+
+#errorMessage {
+    min-height: 20px;
+
+    margin-top: 18px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    color: #a04f4f;
+}
+
+h2 {
+    font-size: 32px;
+
+    font-weight: normal;
+
+    color: #5a4841;
+
+    margin-bottom: 28px;
+}
+
+.container p {
+    line-height: 1.8;
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
