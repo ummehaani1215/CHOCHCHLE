@@ -19,7 +19,7 @@ function openSurprise() {
         name2.toLowerCase() !== correctName2.toLowerCase()
     ) {
 
-        errorMessage.innerText = "Hmm... those don't seem to be the right names.";
+        errorMessage.innerText = "ERROR!";
         return;
     }
 
